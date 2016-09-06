@@ -6,7 +6,7 @@ public class CoroutinesWorld : MonoBehaviour
     void Start()
     {
         print("Start Method");
-        //RunInSequence(); //this method does not work at the moment use AnotherWaySequence() instead
+        StartCoroutine(RunInSequence()); 
         AnotherWaySequence();
         //RunInParallel();
     }
